@@ -1,0 +1,11 @@
+desktop: key mapping in window manager (particularily JWM ) poor causing attempts at capital letters to spawn applications.
+boot: bootscreen instructions state to type an option when you must select an option
+change-default-desktop script:  when "Restart Xwindows" is clicked, a dialog msg is displayed stating "The default dm was not found. Will search for any..."
+conky: conky font causing flickering issues with display. change font to sans
+desktop: jwm applications menu is empty
+menu: add-desktop under tools not pointing to the correct script. should be repointed or removed
+menu -> desktop: add-desktop exists but not counter part (remove-desktop) add remove-desktop
+control center: items hard linked (such as text editors), should consider using desktop-defaults
+live-desktop: installation buttons missing
+menu -> personal: items in menu are hard set and do not follow users selected defaults.
+remove-desktop.sh: item list duplicates items.
