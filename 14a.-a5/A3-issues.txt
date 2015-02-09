@@ -1,0 +1,18 @@
+default-configs: browser configuration is different between RD and RV versions
+desktop: some user files are owned by root (~/.config/geany + ~/.config/gtk-2.0)
+default-configs: antix.list in repos has stable and testing enabled
+add-desktop: add option to import existing values from existing .desktop file
+control center: add ability to access and edit newer desktop-* configuration files from control center
+menu: add-desktop menu entry needs rename and possibly relocate to be encapsuled by the personal menu (rather than desktop)
+desktop-menu: fails to auto update menus with strait dpkg / gdebi
+menu: desktop-session apps showing under preferances and other
+menu: synaptic entry missing from the menu
+geany: geany defaults to open previously opened files. should be set to started blank after being closed.
+add-desktop: to aggressive with adding to the personal menu, manual editing of the personal menu is not possible.
+persist-init: does not ask to change the root / demo user passwords
+
+
+#STOP#
+Time ran out at the moment at alpha3 page 2
+http://antix.freeforums.org/antix-14r-alpha3-available-for-testing-t5305-15.html?hilit=antix
+#STOP#
