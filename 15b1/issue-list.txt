@@ -1,0 +1,91 @@
+1. their are a couple of hiccups in the meta-package installer
+
+a. firefox pulls from the mepiscr testing, which is OK, and installs, however it brings icedove with it and removes iceweasel. icedove does not get pulled in on MX, so not sure what's going on there. also, still has that annoying update message when there is an upstream update.
+
+b. google-chrome installer fails. This is because the meta-installer can't have bm files with more than the one dash (which separate the category from the name that appears in the installer). just rename to Browser-Google_chrome_stable.bm and it works. No internal code change.
+
+c. netflix-desktop doesn't work (dependency problems, silverlight)
+
+d. pipelight doesn't work (dependency problem, silverlight).
+
+e. skype leaves behind a deb file. add rm skype-install.deb to the bm file? similar is done in the google-chrome bm already.
+
+2. Sound Card needs an icon for the menu.
+
+3.  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard.
+
+- does not remove existing personal menu items.
+
+- added items do not show up in personal, but they do show up in the remove list, twice.
+
+4. Add Menu Item - Shows up in Applications, but not in Personal.
+
+- categories do not match menu.
+
+5.  Session Settings - consider fully commented user level files here similar to the global. At a minimum, files that need a shebang (startup) should have one by default.
+
+6.  Desktop>Session Settings menu entry does not open all the same files as the corresponding Control Centre entry.
+
+7. consider placing a commented line about using the desktop-session startup entry instead of the various wm startup files. ( In the wm startup files) 
+
+8.  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry)
+
+9. Safe Graphics defaulting to to high of resolution / and or do not implement vesa driver 1280x1024, suggest 1024x768(as per rokynji's testing)
+
+10. Long delay with apt-get update for debs.slavino.sk, what comes from this repo?
+
+11. To many entries in the personal menu by default. Suggest only the add/remove items program and / or what is personal and how to use it.
+
+12. Menu header items redundant due to personal menu... 
+
+13. Menu items duplicate what is in the control center. Suggest option be placed in the control center to hide such items as well as the appropriate xdg menu change to honour the Display item.
+
+14. fbxkb still in startup upon installation though only really needed for live system.
+
+15. Conky network monitor unreliable and inconsistant wired / wireless networking presets. (http://antix.freeforums.org/post39696.html#p39696) Maybe a good udev rule for network interface detection?
+
+16. Connect shares missing depends, nfs-common
+
+17. add/remove program does not remove the initial default programs from the personal menu.
+
+18. keys file (or desktop-defaults-run) still buggered. pressing CTRL + SHIFT + F  for root file manager opens and imediately closes or does not do anything.
+
+19. Default wallpaper having world in lower right gets covered by the panels, suggest redesign of wallpaper or different wallpaper.
+
+20. usb automount / mountpoint building... spacefm -d or udev rule ???
+
+21. If not using default desktop session, the install icon is missing.
+
+22. need a synaptic as root override .desktop file in /usr/share/applications/antix/
+
+23. controlCentre --} Hardware tab --} Select sound card
+If the "Cancel" button is clicked, the dialog box titlebar and window border disappear.
+
+24. controlCentre --} Hardware tab --} PC Information
+select "Repository"
+information is displayed to a roxterm window _AND_ a yad dialog inviting "Edit repositories" is displayed.
+Clicking "OK" causes the utility to abend/close.
+
+25. The pre-installed "FlashBock" addon has become obsolete/redundant. Iceweasel now provides "Click to Play" permissions for each individual plugin, including Flash.
+
+26. Windows open in top left rather than center screen, causing MASSIVE mouse movements to be neccessary
+
+27. Rox-filer and spacefm missing default text editors for root.
+
+28. Startup persistance config missing option to select persistance file format.
+
+29. Startup jumping the gun with desktop icons starting before icewm again.
+
+30. Wallpaper app limited / autodetection of desktop types and their limits is disliked. Look into what the new limits of the desktop setting programs are (rox / space / none)
+
+31. Rox color themes buggered when switching gtk themes.
+
+32. splash=off boot parameter only seems to switch off the splash screen for VT1
+
+33. default user groups in live / installer of first user configuration do not match that of add-user for 2nd and later users
+
+34. Make manual /  help window autostart on herbsluftfm as it is easy to get stuck in that window manager and not get out.
+
+35. checking save passwords in the gksu dialog is broken. (http://antix.freeforums.org/post40266.html#p40266)
+
+36. 
