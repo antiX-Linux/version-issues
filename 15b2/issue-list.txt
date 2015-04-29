@@ -1,6 +1,6 @@
--)>  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard.
+-)>  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard. [FIXED]
 
-- does not remove existing personal menu items.
+- does not remove existing personal menu items. 
 
 - added items do not show up in personal, but they do show up in the remove list, twice.
 
@@ -17,8 +17,6 @@
 -)>  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry)
 
 -)> To many entries in the personal menu by default. Suggest only the add/remove items program and / or what is personal and how to use it.
-
--)> Menu items duplicate what is in the control center. Suggest option be placed in the control center to hide such items as well as the appropriate xdg menu change to honour the Display item.
 
 -)> add/remove program does not remove the initial default programs from the personal menu.
 
