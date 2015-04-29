@@ -1,0 +1,53 @@
+1.  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard.
+
+- does not remove existing personal menu items.
+
+- added items do not show up in personal, but they do show up in the remove list, twice.
+
+2. Add Menu Item - Shows up in Applications, but not in Personal.
+
+- categories do not match menu.
+
+3.  Session Settings - consider fully commented user level files here similar to the global. At a minimum, files that need a shebang (startup) should have one by default.
+
+4.  Desktop>Session Settings menu entry does not open all the same files as the corresponding Control Centre entry.
+
+5. consider placing a commented line about using the desktop-session startup entry instead of the various wm startup files. ( In the wm startup files) 
+
+6.  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry)
+
+7. To many entries in the personal menu by default. Suggest only the add/remove items program and / or what is personal and how to use it.
+
+8. Menu header items redundant due to personal menu... 
+
+9. Menu items duplicate what is in the control center. Suggest option be placed in the control center to hide such items as well as the appropriate xdg menu change to honour the Display item.
+
+10. add/remove program does not remove the initial default programs from the personal menu.
+
+11. need a synaptic as root override .desktop file in /usr/share/applications/antix/
+
+12. Startup jumping the gun with desktop icons starting before icewm again.
+
+13. Wallpaper app limited / autodetection of desktop types and their limits is disliked. Look into what the new limits of the desktop setting programs are (rox / space / none)
+
+14. Make manual /  help window autostart on herbsluftfm as it is easy to get stuck in that window manager and not get out.
+
+15. In live persistence, stranded files are still accumulating in the aufs_plnk directory (and are being needlessly saved in the persistence file).
+http://antix.freeforums.org/post40370.html#p40370
+
+16. file-roller archive manager (menu>accessories>archive manager) has no title bar, menus, or resize handles on the window.
+
+17. periodically on this system, the icewm decorations on the windows disappear. (minimize, maximize, close, and resize handles). so far I've only noticed it with a combination of root and user launched apps.
+http://antix.freeforums.org/post40365.html#p40365
+
+18. usr/local/bin/antixccmouse.sh
+mouse acceleration set via ControlCentre is not retained across sessions
+
+19. ControlCentre "mouse acceleration" utility:
+displays a hard-coded value (rather than current value) each time its dialog window is opened
+
+20. ControlCentre "select kb layout" utility:
+displays 'british' each time opened (regardless the actual current setting)
+
+21.the mepiscr repo list should probably be removed unless there is a new definition available for jessie-based stuff.
+
