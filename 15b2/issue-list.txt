@@ -1,20 +1,27 @@
--)>  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard. [FIXED]
+-)>  Remove Menu Item - desktop shortcut removes from spacefm desktop but not from rox pinboard. 
+[FIXED]
 
 - does not remove existing personal menu items. 
 
-- added items do not show up in personal, but they do show up in the remove list, twice. [FIXED]
+- added items do not show up in personal, but they do show up in the remove list, twice. 
+[FIXED]
 
 -)> Add Menu Item - Shows up in Applications, but not in Personal.
 
 - categories do not match menu.
 
--)>  Session Settings - consider fully commented user level files here similar to the global. At a minimum, files that need a shebang (startup) should have one by default.
+-)>  Session Settings - consider fully commented user level files here similar to the global. At a minimum, files that need a shebang (startup) should have one by default. 
+[FIXED] - First run script for desktop-session copies over a user config from the etc global config
 
 -)>  Desktop>Session Settings menu entry does not open all the same files as the corresponding Control Centre entry.
+[PARTIALLY FIXED] - desktop-session-file-locations.sh lib @ /usr/local/lib/desktop-session/ contains $edit_list_main and $edit_list_user, source locations file before calling editor like: 
+'. /usr/local/lib/desktop-session/desktop-session-file-locations.sh; desktop-defaults-run -te $edit_list_user $edit_list_main'
+Or call the lib and it will open the files for edit.
 
 -)> consider placing a commented line about using the desktop-session startup entry instead of the various wm startup files. ( In the wm startup files) 
 
--)>  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry) [FIXED]
+-)>  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry) 
+[FIXED] - add-remove-entry
 
 -)> To many entries in the personal menu by default. Suggest only the add/remove items program and / or what is personal and how to use it.
 
