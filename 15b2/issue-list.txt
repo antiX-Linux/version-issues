@@ -2,7 +2,7 @@
 
 - does not remove existing personal menu items. 
 
-- added items do not show up in personal, but they do show up in the remove list, twice.
+- added items do not show up in personal, but they do show up in the remove list, twice. [FIXED]
 
 -)> Add Menu Item - Shows up in Applications, but not in Personal.
 
@@ -14,11 +14,9 @@
 
 -)> consider placing a commented line about using the desktop-session startup entry instead of the various wm startup files. ( In the wm startup files) 
 
--)>  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry)
+-)>  Consider a wrapper script for Add Menu Entry and Remove Menu Entry, or at least rename them so they are in the same place in the menu. (Menu Entry - Add and Menu Entry- Remove for instance). (Name add/remove menu entry) [FIXED]
 
 -)> To many entries in the personal menu by default. Suggest only the add/remove items program and / or what is personal and how to use it.
-
--)> add/remove program does not remove the initial default programs from the personal menu.
 
 -)> need a synaptic as root override .desktop file in /usr/share/applications/antix/
 
